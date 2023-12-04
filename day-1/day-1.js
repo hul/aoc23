@@ -4,11 +4,10 @@ const data1 = ["part-1-test-data.txt", "part-1-data.txt"];
 
 const data2 = ["part-2-test-data.txt", "part-2-data.txt"];
 
-//
-// data1.forEach((fileName) => {
-//   const result = part1(fileName);
-//   console.log(result);
-// });
+data1.forEach((fileName) => {
+  const result = part1(fileName);
+  console.log(result);
+});
 
 data2.forEach((fileName) => {
   const result = part2(fileName);
