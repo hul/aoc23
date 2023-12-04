@@ -1,6 +1,3 @@
-console.log("Advent of Code 2023 - star 1");
-
-const input = `
 eightqrssm9httwogqshfxninepnfrppfzhsc
 one111jxlmc7tvklrmhdpsix
 bptwone4sixzzppg
@@ -1001,24 +998,3 @@ sixthree6lxcrsevenseven69twonegs
 drkdbmv4zbjbznsqtj
 eightbqfhnmvqsoneninezbrzcqkz4ftv
 1eightcrcjcbdthreebscfpvznqfrj6
-`;
-
-const testInput = `
-1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet
-`;
-
-function sumCalibrationValues(input) {
-  const lines = input.split("\n");
-  return lines.filter(Boolean).reduce((acc, curr, index) => {
-    const numbers = curr.match(/\d/g).filter(Boolean);
-    const first = numbers[0];
-    const last = numbers.pop();
-    return acc + Number(`${first}${last}`);
-  }, 0);
-}
-
-console.log(`Test Input Result: ${sumCalibrationValues(testInput)}`);
-console.log(`Test Input Result: ${sumCalibrationValues(input)}`);
